@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flippy Floppy Birdie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>  
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+        }
+
+        .hero {
+            background-image: url('hero-background.png'); /* Put your custom image source here */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .game-title {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Keep Comic Sans for the game title */
+            font-size: 4rem;
+            font-weight: bold;
+            color: #ffde00; /* Bright yellow color */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Stronger shadow for better contrast */
+        }
+
+        .description {
+            font-size: 1.25rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Soft shadow for readability */
+        }
+
+        .download-btn {
+            background-color: #00bcd4; /* Bright teal color */
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.25rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #0097a7; /* Darker teal for hover */
+            cursor: pointer;
+        }
+
+        /* Override font for sections other than hero */
+        .content {
+            font-family: 'Poppins', sans-serif; /* Apply Poppins font to all content sections */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-yellow-400 text-2xl font-semibold">Flippy Floppy Birdie</a>
+            <div class="space-x-4">
+                <a href="#" class="text-white hover:text-yellow-400">Home</a>
+                <a href="#about" class="text-white hover:text-yellow-400">About</a>
+                <a href="#download" class="text-white hover:text-yellow-400">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen flex flex-col justify-center items-center text-center text-white bg-cover bg-center">
+        <h1 class="game-title mb-4">Flippy Floppy Birdie</h1>
+        <p class="description max-w-lg mb-6">
+            Get ready to fly and dodge obstacles in the sky! Flappy, fun, and fast-paced—take control of Birdie and
+            see how long you can survive!
+        </p>
+        <a href="#download" class="download-btn transition-transform transform hover:scale-105">
+            Download Now
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800 text-center text-white content">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-4 text-yellow-500">About Flippy Floppy Birdie</h2>
+            <p class="text-lg max-w-2xl mx-auto">
+                Flippy Floppy Birdie is an addictive game where you control a cute bird that needs to avoid obstacles
+                while soaring through the sky. It's easy to play but hard to master. Perfect for quick gaming sessions or
+                when you just need to take a break. The game features colorful graphics, smooth gameplay, and tons of fun.
+            </p>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 bg-gray-700 text-center text-white content">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-4 text-blue-200">Download Flippy Floppy Birdie</h2>
+            <p class="text-lg mb-6">Ready to start flapping? Download now and begin your journey with Birdie!</p>
+            <a href="#" class="download-btn text-black">Download Game</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center text-white py-4 mt-10">
+        <p>&copy; 2024 Flippy Floppy Birdie. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
